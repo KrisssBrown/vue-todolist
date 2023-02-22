@@ -37,8 +37,8 @@
                     <ul class="list-group list-group-flush">
                         <li v-for="(task, index) in tasks"
                             class="list-group-item d-flex align-items-center justify-content-center gap-2">
-                            <input type="checkbox" class="col-1 w-auto" @click="toggleActive">
-                            <h6 class="col mb-0" :style="isActive===true?'text-decoration: line-through':''">
+                            <input type="checkbox" class="col-1 w-auto" @click="toggleActive" v-model="task.done">
+                            <h6 class="col mb-0" :style="task.done?'text-decoration: line-through; color: red':''">
                                 {{task.text}}
                             </h6>
                             <span @click="removeTask(index)"><i class="fa-solid fa-circle-xmark"></i></span>
