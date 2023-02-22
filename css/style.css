@@ -1,0 +1,12 @@
+ul,
+ol,
+li,
+menu{
+    list-style-type: none;
+    
+}
+
+.fa-circle-xmark{
+    color:rgb(128, 0, 0)
+    
+}
