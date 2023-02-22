@@ -25,7 +25,7 @@
                     <label for="inputPassword" class="col-auto col-form-label">Aggiungi task</label>
                     <div class="col">
                         <input type="text" class="form-control" id="inputPassword"
-                            placeholder="Aggiungi cosa da fare..." v-model="inputValue" />
+                            placeholder="Aggiungi cosa da fare..." v-model="inputValue" @keyup.enter="addTask" />
                     </div>
                     <div class="col-auto">
                         <button @click="addTask" class="btn btn-primary">Aggiungi alla lista</button>

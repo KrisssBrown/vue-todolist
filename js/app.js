@@ -45,12 +45,12 @@ createApp({
     methods: {
         addTask() {
             // console.log(this.inputValue)
-            const newTask = this.inputValue
-            console.log(newTask)
+            const newTask = {text: this.inputValue, done:false}
+            // console.log(newTask)
             this.tasks.push(newTask)
             this.inputValue = ''
-            console.log(this.inputValue)
-            console.log(this.tasks)
+            // console.log(this.inputValue)
+            // console.log(this.tasks)
         },
         
         removeTask(startIndex){
@@ -60,8 +60,8 @@ createApp({
             this.isActive = !this.isActive;
             console.log(this.isActive)
         },
-        updated(){
-            console.log(isChecked)
-        }
+        // updated(){
+        //     console.log(isChecked)
+        // }
     }
 }).mount('#app')
